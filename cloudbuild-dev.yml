@@ -45,3 +45,4 @@ substitutions:
 tags:
   - gcp-cloud-build-deploy-cloud-run
   - simple-nodejs-service-dev
+  - testing
