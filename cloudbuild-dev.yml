@@ -29,6 +29,8 @@ steps:
         --labels=managed-by=gcp-cloud-build-deploy-cloud-run,commit-sha=$COMMIT_SHA,gcb-build-id=$BUILD_ID
       - '--region=$_DEPLOY_REGION'
       - '--quiet'
+      - '--ingress=internal-and-cloud-load-balancing'
+      - '--update-env-vars=ENV=DEV'
       - '--no-default-url'
     id: Deploy
     entrypoint: gcloud

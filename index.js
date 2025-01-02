@@ -2,7 +2,7 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-  const env = process.env.ENV || 'DEV';
+  const env = process.env.ENV || 'TEST';
   res.send(`Hello this is a test nodejs app for ${env}!`);
 });
 
