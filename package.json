@@ -3,7 +3,7 @@
   "description": "Simple hello world Test sample in Node",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "./dist/index.js",
   "type": "module",
   "scripts": {
     "start": "node index.js"
